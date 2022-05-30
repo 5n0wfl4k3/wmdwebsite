@@ -1,0 +1,52 @@
+/*============= Upcoming =============*/
+.movies .heading{
+  padding: 15px 40px;
+}
+
+.heading--title {
+  padding: 10px 15px;
+  color: var(--text-color);
+  background: var(--box-bg);
+  border-radius: 25px;
+}
+
+.movie-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+  grid-gap: 1rem;
+}
+
+.genre .movie--box--img {
+    border: 2px solid var(--title-color);
+    border-radius: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.genre .movie--box .box--text{
+  border-radius: 0;
+  background: none;
+}
+
+.genre .movie--box:hover .movie--box--img{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.genre .movie--title{
+  font-size: 1.2rem;
+}
+
+.genre .movie--release{
+  font-size: 0.983rem;
+  font-weight: 500;
+}
+/*============= Categories Ends =============*/
+
+@media screen and (max-width: 769px) {
+
+  .genre .genre-content{
+    grid-template-columns: 1fr 1fr;
+  }
+}
